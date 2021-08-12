@@ -17,6 +17,13 @@ function withOpacity(variableName) {
     variants: {},
     theme: {
       extend: {
+        borderColor: theme => ({
+          ...theme('colors'),
+           DEFAULT: theme('colors.gray.300', 'currentColor'),
+          'primary': withOpacity('--border-color'),
+          'secondary': '#ffed4a',
+          'danger': '#e3342f',
+        }),
         backgroundColor: {
           base: withOpacity('--color-base'),
           'off-base': withOpacity('--color-off-base'),

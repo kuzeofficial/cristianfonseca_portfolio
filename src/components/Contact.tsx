@@ -3,7 +3,7 @@ import TelegramIcon from "./Icons/Telegram";
 
 export default function Contact() {
     return (
-        <div className='grid grid-cols-2 mx-auto text-muted dark:text-gray-100s'>
+        <div className='grid grid-cols-2 mx-auto text-muted dark:text-black'>
             <div className='p-4 text-center'>
                 <div className='w-1/2 mx-auto text-lg font-semibold md:w-auto'>
                     Email
@@ -15,7 +15,7 @@ export default function Contact() {
                     href='mailto:cfonsecacomas@gmail.com'
                     className='mt-1 transition-colors text-primary hover:text-secondary'
                 >
-                    cfonsecacomas@gmail.com
+                    Mail
                 </a>
             </div>     
             <div className='p-4 text-center'>

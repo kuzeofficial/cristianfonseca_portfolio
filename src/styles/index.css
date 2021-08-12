@@ -29,6 +29,8 @@ body {
 
 @layer base {
   :root {
+    --color-speak: 107, 114, 128; /* gray-500 */
+    --border-color: 243, 244, 246;
     --color-base: 255, 255, 255; /* white */
     --color-text-base: 0, 0, 0; /* black */
     --color-off-base: 249, 250, 251; /* gray-50 */
@@ -39,6 +41,7 @@ body {
   }
 
   .theme-light {
+    --border-color: 243, 244, 246 /*gray-100*/;
     --color-base: 255, 255, 255; /* white */
     --color-text-base: 0, 0, 0; /* black */
     --color-off-base: 249, 250, 251; /* gray-50 */
@@ -49,6 +52,7 @@ body {
   }
 
   .theme-dark {
+    --border-color: 75, 85, 99; /* gray-600 */
     --color-base: 17, 24, 39; /* gray-900 */
     --color-text-base: 243, 244, 246; /* gray-100 */
     --color-off-base: 31, 41, 55; /* gray-800 */
@@ -59,6 +63,7 @@ body {
   }
 
   .theme-solar {
+    --border-color: 254, 205, 211 /* rose-100 */;
     --color-base: 255, 241, 242; /* rose-50 */
     --color-text-base: 26, 28, 35;
     --color-off-base: 255, 234, 236;
@@ -69,6 +74,7 @@ body {
   }
 
   .theme-evergreen {
+    --border-color: 209, 213, 219 /*green-900*/;
     --color-base: 4, 120, 87;
     --color-text-base: 240, 253, 244;
     --color-off-base: 5, 150, 105; /* emerald-600 */
