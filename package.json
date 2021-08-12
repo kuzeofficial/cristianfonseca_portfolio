@@ -1,22 +1,30 @@
 {
-  "name": "personal",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cristianfonseca",
+  "version": "1.0.0",
+  "repository": "https://github.com/kuzeofficial/cristianfonseca",
+  "description": "Personal site for Cristian Fonseca",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "keywords": [],
+  "author": "Cristian Fonseca",
+  "license": "ISC",
   "dependencies": {
     "next": "11.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.4.1",
     "@types/react": "17.0.17",
+    "autoprefixer": "^10.3.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0",
+    "tailwindcss": "^2.2.7",
     "typescript": "4.3.5"
   }
 }
