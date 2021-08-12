@@ -1,4 +1,8 @@
-export default function ThemeSwatch({ title, active }) {
+type ThemeSwatchProps = {
+  title: String;
+  active: Boolean;
+}
+export default function ThemeSwatch({ title, active }: ThemeSwatchProps) {
     return (
       <div
         className={`theme-${title.toLowerCase()} ${

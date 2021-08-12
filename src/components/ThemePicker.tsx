@@ -20,18 +20,22 @@ const themes = [
   }
 ]
 
-export default function ThemePicker({ open }) {
-  function pickTheme(theme) {
+type ThemePickerProps = {
+  open: Boolean;
+}
+
+export default function ThemePicker({ open }: ThemePickerProps) {
+  function pickTheme(theme: string) {
     if (theme === current) return
     document.documentElement.classList.add(theme)
-    localStorage.setItem('crimTheme', theme)
+    localStorage.setItem('Theme', theme)
     document.documentElement.classList.remove(current)
     setCurrent(theme)
   }
   const [current, setCurrent] = useState('')
 
   useEffect(() => {
-    setCurrent(localStorage.crimTheme)
+    setCurrent(localStorage.Theme)
   }, [])
 
   return (

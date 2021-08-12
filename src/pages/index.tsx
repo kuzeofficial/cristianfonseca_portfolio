@@ -1,12 +1,12 @@
 import Layout from "../components/Layout";
+import { Section } from "../components/Section";
+import { Hero } from "../components/Hero";
 
 export default function Index() {
     return (
-        <Layout>
+        <Layout >
             <main>
-                <div>
-                    Hello welcome
-                </div>
+                <Hero />
             </main>
         </Layout>
     )

@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import { GitHubLogo, TwitterLogo, ColorSwatch } from './Icons/Icons'
 
-export const Navbar = ({ pickerOpen, setPickerOpen }) => {
+type NavbarProps = {
+    pickerOpen: Boolean;
+    setPickerOpen: any;
+}
+export const Navbar = ({ pickerOpen, setPickerOpen } : NavbarProps) => {
     return (
         <nav className="p-10 text-muted lg:max-w-5xl md:mx-auto md:max-w-3xl">
             <div className="flex items-center justify-between">

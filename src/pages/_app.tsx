@@ -1,7 +1,11 @@
 import '../styles/index.css';
 import Head from 'next/head';
 
-export default function MyApp({ Component, pageProps }) {
+type MyAppProps = {
+  Component: any;
+  pageProps: Object;
+}
+export default function MyApp({ Component, pageProps } : MyAppProps) {
   return (
     <>
       <Head>
