@@ -8,13 +8,13 @@ type CardProps = {
 }
 export default function Card({date,codelink,livecode,title,description,author}: CardProps) {
     return (
-        <div className='flex flex-row sm:justify-center md:justify-center mb-3'>
+        <div className='flex flex-row sm:justify-center md:justify-center mb-3 '>
             <div className="border-primary border hover:shadow-md rounded w-100 md:w-1/1 sm:w-1/1 lg:w-1/1 h-auto mx-4 flex flex-col justify-center p-3 ">
                 <div className="w-100 items-center flex justify-between mb-1">
                     <p className="text-sm font-semibold text-red-400">{date}</p>
                     <div>
-                        <a className= "hover:border-1 rounded hover:shadow-md text-sm sm:static font-semibold text-red-400 mr-2" href={codelink}>Code</a>
-                        <a className= "hover:border-1 rounded hover:shadow-md text-sm sm:static font-semibold text-blue-400" href={livecode}>Live</a>
+                        <a className= "no-underline hover:underline text-sm sm:static font-semibold text-red-400 mr-2" href={codelink}>Code</a>
+                        <a className= "no-underline hover:underline text-sm sm:static font-semibold text-blue-400" href={livecode}>Live</a>
                     </div>
                 </div>
 

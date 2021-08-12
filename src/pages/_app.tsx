@@ -13,6 +13,7 @@ export default function MyApp({ Component, pageProps } : MyAppProps) {
         <meta property="og:title" content="Cristian Fonseca" key="title" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:image" content="/images/logo.webp" />
       </Head>
       <Component {...pageProps} />
     </>

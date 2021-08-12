@@ -1,15 +1,16 @@
 import { RightArrow } from './Icons/Icons'
 import { Skills } from './Skills'
+import Image from 'next/image'
 
 export const Hero = () => {
     return(
         <div className="flex flex-col justify-between my-10 space-y-14 md:space-y-0 lg:flex-row">
             <div className="flex flex-col">
                 <h1 className="flex flex-col sm:flex-row items-center text-4xl lg:text-4xl md:text-3xl sm:text-3xl ">
-                    <img src="/images/logo.webp" alt="Cristian Fonseca" className="shadow-lg rounded-full border-none mr-3 w-20 h-auto"/>
+                    <img src="/images/logo2.webp" alt="Cristian Fonseca" className="shadow-lg rounded-full border-none mr-3 w-20 h-auto"/>
                     <span>Hi, I'm </span>
-                    <img className="flex flex-row mr-2" src="/images/wave.gif" alt="Greetings Welcome" width="40px" />
-                    <span className="block tracking-wide text-transparent theme-gradient bg-clip-text whitespace-nowrap md:inline">
+                    <Image className="flex flex-row" src="/images/wave.gif" alt="Greetings Welcome" width="40px" height="40px"/>
+                    <span className="block tracking-wide ml-2 text-transparent theme-gradient bg-clip-text whitespace-nowrap md:inline">
                         Cristian Fonseca
                     </span>
                 </h1>
