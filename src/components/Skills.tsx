@@ -5,20 +5,20 @@ import TailwindIcon from "./Icons/Tailwind"
 export const Skills = () => {
     return (
         <div className="w-60 mt-2 md:mb-10 lg:mb-3 2xl:mb-0 ">
-            <ul className={`flex flex-wrap my-2 ml-[-5px] items-center`}>
+            <ul className={`flex flex-wrap my-2 ml-[-5px] space-x-2 items-center `}>
 				<li>
                     <a href="https://es.reactjs.org/">
-					    <ReactIcon width="2em" height="2em"/>
+					    <ReactIcon className="lg:w-9 lg:h-9 md:w-9 md:h-9 w-11 h-11"/>
                     </a>
 				</li>
                 <li>
                     <a href="https://nextjs.org">
-					    <NextIcon width="2em" height="1.6em"/>
+					    <NextIcon className="lg:w-9 lg:h-9 md:w-9 md:h-9 w-11 h-11"/>
                     </a>
 				</li>
                 <li>
                     <a href="https://tailwindcss.com/">
-                        <TailwindIcon width="2em" height="1.6em"/>
+                        <TailwindIcon className="lg:w-9 lg:h-9 md:w-9 md:h-9 w-11 h-11"/>
                     </a>
                 </li>
 			</ul>

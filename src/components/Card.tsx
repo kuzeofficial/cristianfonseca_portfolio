@@ -21,7 +21,7 @@ export default function Card({date,codelink,livecode,title,description,author}: 
                 <h1 className="font-black text-lg tracking-wide">{title}</h1>
 
                 <div className="text-sm font-normal max-h-100 leading-7 block overflow-ellipsis overflow-hidden break-words mb-2">
-                    <a>{description}</a>
+                    <p>{description}</p>
                 </div>
 
                 <div className="w-full flex items-center">

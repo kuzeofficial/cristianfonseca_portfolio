@@ -3,7 +3,6 @@ type ThemeSwatchProps = {
   active: Boolean;
 }
 export default function ThemeSwatch({ title, active }: ThemeSwatchProps) {
-  console.log(active)
     return (
       <div
         className={`theme-${title.toLowerCase()} ${
