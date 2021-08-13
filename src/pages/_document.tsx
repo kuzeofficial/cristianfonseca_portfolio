@@ -8,8 +8,12 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="The portfolio of Cristian Fonseca, a fullstack web developer"
+            content="A young developer web full-stack from Cuba"
           />
+          <title>Cristian Fonseca</title>
+          <link rel="icon" href="/favicon.ico"/>
+          <meta property="og:url" content="https://www.cristianfonseca.com" key="ogurl" />
+          <meta property="og:image" content="/images/logo2.webp" key="ogimage" />
           <script async type="text/javascript" src="/js/theme.js"/>
           <link
             rel="preload"
