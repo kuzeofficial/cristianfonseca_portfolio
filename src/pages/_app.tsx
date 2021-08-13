@@ -10,10 +10,11 @@ export default function MyApp({ Component, pageProps } : MyAppProps) {
     <>
       <Head>
         <title>Cristian Fonseca - Web Developer</title>
-        <meta property="og:title" content="Cristian Fonseca" key="title" />
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:image" content="/images/logo.webp" />
+        <meta property="og:url" content="https://www.cristianfonseca.com" key="ogurl" />
+        <meta property="og:image" content="/images/logo2.webp" key="ogimage" />
+        <meta property="og:site_name" content="Cristian Fonseca" key="ogsitename" />
+        <meta property="og:title" content="Cristian Fonseca" key="ogtitle" />
+        <meta property="og:description" content="Full-stack web developer" key="ogdesc" />
       </Head>
       <Component {...pageProps} />
     </>
