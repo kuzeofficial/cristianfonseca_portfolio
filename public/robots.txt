@@ -1,14 +1,4 @@
-# Example 1: Block only Googlebot
-User-agent: Googlebot
-Disallow: /
-
-# Example 2: Block Googlebot and Adsbot
-User-agent: Googlebot
-User-agent: AdsBot-Google
-Disallow: /
-
-# Example 3: Block all but AdsBot crawlers
 User-agent: *
-Disallow: /
+Allow: /
 Sitemap: https://cristianfonseca.com/sitemap.xml
 Sitemap: https://www.cristianfonseca.com/sitemap.xml
