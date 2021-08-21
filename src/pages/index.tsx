@@ -11,7 +11,9 @@ export default function Index() {
             <main>
                 <Hero />
                 <Section title='Portfolio' id='portfolio'>
-                    <Card author="Cristian Fonseca" title="WeatherApp with ReactJS" description="Simple weather app with two inputs for location and output show the temperature and others parameters of great useful" date="June 16, 2021" codelink="https://github.com/kuzeofficial/WAppReact" livecode="https://wappreact.netlify.app"/>
+                    <Card author="Cristian Fonseca" title="WeatherApp - React" description="Simple weather app with two inputs for location and output show the temperature and others parameters of great useful" date="June 16, 2021" codelink="https://github.com/kuzeofficial/WAppReact" livecode="https://wappreact.netlify.app"/>
+                    <Card author="Cristian Fonseca" title="Rick and Morty - GraphQL" description="A SPA to search for characters from the Rick and Morty series using the rickandmortyapi.com API" date="February 2, 2020" codelink="https://github.com/kuzeofficial/rickmortyapi" livecode="https://rickmortyapigql.vercel.app/"/>
+                    <Card author="Cristian Fonseca" title="toDaPi - React" description="A SPA that serves as a list of tasks, allows to modify, delete and add new tasks, with a simple but very friendly interface" date="May 3, 2021" codelink="https://github.com/kuzeofficial/toDo-app" livecode="https://todapi.netlify.app/"/>
                 </Section>
                 <Section title='Contact' id='contact'>
                     <Contact/>
