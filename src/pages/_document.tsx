@@ -10,7 +10,6 @@ class MyDocument extends Document {
             name="description"
             content="A young developer web full-stack from Cuba"
           />
-          <title>Cristian Fonseca</title>
           <link rel="icon" href="/favicon.ico"/>
           <meta property="og:url" content="https://www.cristianfonseca.com" key="ogurl" />
           <meta property="og:image" content="/images/logo2.webp" key="ogimage" />
