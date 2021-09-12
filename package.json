@@ -14,7 +14,9 @@
   "author": "Cristian Fonseca",
   "license": "ISC",
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "11.1.0",
+    "next-mdx-remote": "^3.0.4",
     "package.json": "^2.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
