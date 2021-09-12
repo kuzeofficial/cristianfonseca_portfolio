@@ -11,10 +11,8 @@ export default function Blog({posts}) {
         <div>
             {posts.map((post:any) => (
                 <Link key={post.slug} href={`/blog/${post.slug}`}>
-                    <a>
-                        <h2>{post.title}</h2>
-                        <p>{post.date}</p>
-                    </a>
+                    <h2>{post.title}</h2>
+                    <p>{post.date}</p>
                 </Link>
             ))}
         </div>
