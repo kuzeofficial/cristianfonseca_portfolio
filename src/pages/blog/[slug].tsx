@@ -2,10 +2,9 @@ import { MDXRemote } from "next-mdx-remote";
 import Head from 'next/head';
 import  {MDXComponents}  from "../../components/MDXComponents";
 import Layout from "../../components/Layout";
-import LayoutBlog from "../../components/MD/LayoutBlog"
 import { getFiles, getFileBySlug } from "../../lib/mdx";
 
-export default function Post({ source, frontmatter }) {
+export default function Post({ source, frontmatter }:any) {
   console.log(frontmatter)
   return (
     <>
@@ -54,14 +53,13 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }:any) {
   const { source, frontmatter } = await getFileBySlug("posts", params.slug);
 
   return {
     props: {
       source,
       frontmatter: {
-        slug: params.slug,
         ...frontmatter,
       },
     },
