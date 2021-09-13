@@ -13,7 +13,7 @@ export const Navbar = ({ pickerOpen, setPickerOpen } : NavbarProps) => {
                     <Link href='/'>
                         <a className="transition-colors hover:text-muted-hover">Home</a>
                     </Link>
-                    <Link href='/'>
+                    <Link href='/blog'>
                         <a className="transition-colors hover:text-muted-hover">Blog</a>
                     </Link>
                 </div>

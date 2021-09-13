@@ -14,6 +14,7 @@
   "author": "Cristian Fonseca",
   "license": "ISC",
   "dependencies": {
+    "date-fns": "^2.23.0",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.4",
     "next": "11.1.0",
