@@ -1,5 +1,2 @@
-export const orderByDate:any = (prev:any, current:any) => {
-  const currently: any = new Date(current.date)
-  const prevently: any = new Date(prev.date)
-  currently - prevently
-}
+export const orderByDate = (prev:any, current: any) =>
+  <any>new Date(current.date) - <any>new Date(prev.date);
