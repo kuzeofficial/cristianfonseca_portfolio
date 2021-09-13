@@ -14,6 +14,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "public/js/theme.ts", ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "public/js/theme.ts", "src/lib/use-intersection-observer.js", ],
   "exclude": ["node_modules"]
 }

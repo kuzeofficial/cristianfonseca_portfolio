@@ -7,16 +7,16 @@ export function useIntersectionObserver({
   root = null,
   rootMargin = "0%",
   freezeOnceVisible = false,
-}:any) {
+}) {
   const observer = useRef(null);
   const [entry, setEntry] = useState();
   const isClient = typeof window !== "undefined";
   const hasIOSupport = isClient && !!window.IntersectionObserver;
-  const noUpdate = entry?.isIntersecting && freezeOnceVisible;
+  const noUpdate = entry?.isIntersecting && freezeOnceVisible 
 
   const IOOptions = { threshold, root, rootMargin };
 
-  const updateEntry = ([entry]:any) => {
+  const updateEntry = ([entry]) => {
     setEntry(entry);
   };
 

@@ -11,8 +11,8 @@ import Layout from "../../components/Layout";
 
 export default function Blog({ posts }:any) {
   const { next, currentPage, currentData, maxPage } = usePagination(posts, 30);
-  const [element, setElement] = useState(null);
-  const observer = useRef();
+  const [element, setElement]:any = useState(null);
+  const observer:any = useRef();
   const prevY = useRef(0);
 
   const currentPosts = currentData();
@@ -33,8 +33,8 @@ export default function Blog({ posts }:any) {
   }, []);
 
   useEffect(() => {
-    const currentElement = element;
-    const currentObserver = observer.current;
+    const currentElement:any = element;
+    const currentObserver:any = observer.current;
 
     if (currentElement) {
       currentObserver.observe(currentElement);
