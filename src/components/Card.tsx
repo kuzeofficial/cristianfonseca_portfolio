@@ -1,6 +1,6 @@
 type CardProps = {
     date: string;
-    codelink: string;
+    codelink?: string;
     livecode: string;
     title: string;
     description: string;
@@ -13,7 +13,9 @@ export default function Card({date,codelink,livecode,title,description,author}: 
                 <div className="w-100 items-center flex justify-between mb-1">
                     <p className="text-sm font-semibold text-red-400">{date}</p>
                     <div>
-                        <a className= "no-underline hover:underline text-sm sm:static font-semibold text-red-400 mr-2" href={codelink}>Code</a>
+                        { codelink &&
+                            <a className= "no-underline hover:underline text-sm sm:static font-semibold text-red-400 mr-2" href={codelink}>Code</a>
+                        }
                         <a className= "no-underline hover:underline text-sm sm:static font-semibold text-blue-400" href={livecode}>Live</a>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ export const Hero = () => {
                     </span>
                 </h1>
                 <h2 className="font-light max-w-lg mt-4 text-center md:text-left sm:text-left text-1xl sm:text-2xl md:text-1xl">
-                    A young web developer🤓 passionate about technology💻 and communication🛰️ from Cuba🏝️
+                    A young web developer🤓 passionate about technology💻 and communication🛰️ from Brasil🏝️
                 </h2>
                 <Skills/>
             </div>
