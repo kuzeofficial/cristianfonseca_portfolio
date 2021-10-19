@@ -8,7 +8,7 @@ export const Hero = () => {
             <div className="flex flex-col">
                 <h1 className="flex flex-col sm:flex-row items-center text-4xl lg:text-4xl md:text-3xl sm:text-3xl ">
                     <img src="/images/logo2.webp" alt="Cristian Fonseca" className="shadow-lg rounded-full border-none mr-3 w-20 h-auto"/>
-                    <span>Hi, I'm </span>
+                    <span className="sm:ml-2">Hi, I'm </span>
                     <Image className="flex flex-row" src="/images/wave.gif" alt="Greetings Welcome" width="40px" height="40px"/>
                     <span className="block tracking-wide ml-2 text-transparent theme-gradient bg-clip-text whitespace-nowrap md:inline">
                         Cristian Fonseca
