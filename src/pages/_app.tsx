@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps } : MyAppProps) {
           type: 'profile',
           images: [
             {
-              url: "https://cristianfonseca.com/images/logo2.webp",
+              url: "https://cristianfonseca.com/images/logo2.png",
               width: 600,
               height: 600,
             },
