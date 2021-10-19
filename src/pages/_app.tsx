@@ -26,9 +26,9 @@ export default function MyApp({ Component, pageProps } : MyAppProps) {
           type: 'profile',
           images: [
             {
-              url: "https://cristianfonseca.com/images/banner.png",
-              width: 600,
-              height: 300,
+              url: "https://cristianfonseca.com/images/logo2.webp",
+              width: 200,
+              height: 200,
             },
           ],
         }}
