@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps } : MyAppProps) {
         openGraph={{
           title: 'Cristian Fonseca',
           description: "A young web developer🤓 passionate about technology💻 and communication🛰️ from Brasil🏝️",
-          url: 'https://cristianfonseca.com',
+          url: 'Web Developer',
           type: 'profile',
           images: [
             {
