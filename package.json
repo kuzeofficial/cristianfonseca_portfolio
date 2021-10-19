@@ -14,6 +14,7 @@
   "author": "Cristian Fonseca",
   "license": "ISC",
   "dependencies": {
+    "@tanem/react-nprogress": "^3.0.81",
     "date-fns": "^2.23.0",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.4",
@@ -24,7 +25,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "reading-time": "^1.5.0",
-    "remark-code-titles": "^0.1.2"
+    "remark-code-titles": "^0.1.2",
+    "zustand": "^3.5.14"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
