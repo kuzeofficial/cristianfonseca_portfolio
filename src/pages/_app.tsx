@@ -1,7 +1,7 @@
 import '../styles/index.css';
 import Head from 'next/head';
 import "../styles/prism.css";
-import {DefaultSeo  } from 'next-seo';
+import {DefaultSeo,NextSeo } from 'next-seo';
 
 type MyAppProps = {
   Component: any;
@@ -29,6 +29,21 @@ export default function MyApp({ Component, pageProps } : MyAppProps) {
           handle: '@cristian_devk',
           site: '@site',
           cardType: 'summary_large_image',
+        }}
+      />
+       <NextSeo
+        openGraph={{
+          title: 'Cristian Fonseca',
+          description: "A young web developer🤓 passionate about technology💻 and communication🛰️ from Brasil🏝️",
+          url: 'Web Developer',
+          type: 'profile',
+          images: [
+            {
+              url: "https://cristianfonseca.com/images/logo2.png",
+              width: 600,
+              height: 600,
+            },
+          ],
         }}
       />
       
