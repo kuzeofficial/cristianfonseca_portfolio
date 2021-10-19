@@ -6,11 +6,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en-US">
         <Head>
-          <meta
-            name="description"
-            content="A young developer web full-stack from Cuba"
-          />
-          <link rel="icon" href="/favicon.ico"/>
           <meta property="og:url" content="https://www.cristianfonseca.com" key="ogurl" />
           <meta property="og:image" content="/images/logo2.webp" key="ogimage" />
           <script async type="text/javascript" src="/js/theme.js"/>

@@ -27,8 +27,7 @@ export default function MyApp({ Component, pageProps } : MyAppProps) {
         }}
         twitter={{
           handle: '@cristian_devk',
-          site: '@site',
-          cardType: 'summary_large_image',
+          site: '@cristian_devk',
         }}
       />
        <NextSeo
