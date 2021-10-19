@@ -4,10 +4,25 @@ import Footer from "../components/Footer";
 import { Hero } from "../components/Hero";
 import Contact from "../components/Contact";
 import Card from "../components/Card";
-
+import {NextSeo} from 'next-seo'
 export default function Index() {
     return (
         <Layout >
+            <NextSeo
+        openGraph={{
+          title: 'Cristian Fonseca',
+          description: "A young web developer🤓 passionate about technology💻 and communication🛰️ from Brasil🏝️",
+          url: 'Web Developer',
+          type: 'profile',
+          images: [
+            {
+              url: "https://cristianfonseca.com/images/logo2.png",
+              width: 600,
+              height: 600,
+            },
+          ],
+        }}
+      />
             <main>
                 <Hero />
                 <Section title='Portfolio' id='portfolio'>
