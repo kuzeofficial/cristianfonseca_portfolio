@@ -3,9 +3,8 @@ import Head from 'next/head';
 import  {MDXComponents}  from "../../components/MDXComponents";
 import Layout from "../../components/Layout";
 import { getFiles, getFileBySlug } from "../../lib/mdx";
-
+import Image from 'next/image'
 export default function Post({ source, frontmatter }:any) {
-  console.log(frontmatter)
   return (
     <>
       <Head>
@@ -25,7 +24,7 @@ export default function Post({ source, frontmatter }:any) {
         <h1 className="textblock text-center font-bold tracking-wide text-transparent theme-gradient bg-clip-text items-center text-4xl lg:text-5xl md:text-3xl sm:text-3xl mb-4">{frontmatter.title}</h1>
         <div className="flex justify-between mb-2">
           <div className="flex flex-row items-center">
-            <img src="/images/logo2.webp" height="40px" className="rounded-full lg:w-9 w-9 "/>
+            <Image src="/images/logo2.webp" height="40px" width="40px" className="rounded-full lg:w-9 w-9 "/>
             <h3 className="flex-wrap ml-2">{frontmatter.author}</h3>
           </div>
           <div className="flex flex-row items-center">
