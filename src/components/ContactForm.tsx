@@ -61,7 +61,7 @@ export const ContactForm = () => {
         })}
         onSubmit={(values, {resetForm}) => {
             setIsLoading(true);
-            fetch('http://localhost:3000/api/sendEmail', {
+            fetch('http://cristianfonseca.com/api/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
