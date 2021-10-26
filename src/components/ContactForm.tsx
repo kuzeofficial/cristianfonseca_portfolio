@@ -12,7 +12,7 @@ export const ContactForm = () => {
             <div className="mt-1 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="p-6 mr-2 border bg-off-base shadow-md sm:w-auto rounded-xl">
-                        <h1 className="text-4xl sm:text-5xl text-base dark:text-white font-extrabold tracking-tight">
+                        <h1 className="text-3xl sm:text-5xl text-base dark:text-white font-extrabold tracking-tight">
                         Contact information
                         </h1>
                         <p className="text-muted-hover text-lg sm:text-2xl font-medium text-gray-600  mt-2">
@@ -73,8 +73,8 @@ export const ContactForm = () => {
                     })
                 })
                     .then(async (response) => {
-                        response.ok ? setIsSubmited(true) : setIsError(true)
-                        await resetForm()
+                        await response.ok ? setIsSubmited(true) : setIsError(true)
+                        resetForm()
                         setIsLoading(false)
                         setTimeout(() => {
                             setIsError(false)
