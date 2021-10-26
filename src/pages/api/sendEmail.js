@@ -3,13 +3,13 @@ export default function sendEmail(req, res){
     var name = req.body.name;
     var from = req.body.email;
     var message = req.body.message;
-    var to = process.env.USER_GMAIL;
+    var to = `${process.env.USER_GMAIL}`;
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         host: 'smtp.gmail.com',
         auth: {
-            user: process.env.USER_GMAIL,
-            pass: process.env.PASS_GMAIL
+            user: `${process.env.USER_GMAIL}`,
+            pass: `${process.env.PASS_GMAIL}`
         }
     });
     var mailOptions = {
