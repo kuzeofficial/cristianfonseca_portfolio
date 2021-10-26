@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-import protectAPI from '../../middleware/protectAPI'
 function sendEmail(req, res){
 
     var name = req.body.name;
@@ -24,4 +23,4 @@ function sendEmail(req, res){
     transporter.sendMail(mailOptions).then((response) => {res.status(200).json(response)}).catch((error) => {res.status(400).json(error.response)});
 }
 
-export default protectAPI(sendEmail)
+export default sendEmail
