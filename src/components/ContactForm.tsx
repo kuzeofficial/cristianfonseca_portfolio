@@ -12,10 +12,10 @@ export const ContactForm = () => {
             <div className="mt-1 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="p-6 mr-2 border bg-off-base shadow-md sm:w-auto rounded-xl">
-                        <h1 className="text-3xl sm:text-5xl text-base dark:text-white font-extrabold tracking-tight">
-                        Contact information
+                        <h1 className="text-3xl sm:text-5xl  dark:text-white font-extrabold tracking-tight">
+                            Contact information
                         </h1>
-                        <p className="text-muted-hover text-lg sm:text-2xl font-medium text-gray-600  mt-2">
+                        <p className="text-muted-hover text-lg sm:text-2xl font-medium  mt-2">
                             Fill in the form to start a conversation
                         </p>
 
