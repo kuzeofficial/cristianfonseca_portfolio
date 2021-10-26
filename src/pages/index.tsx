@@ -17,8 +17,10 @@ export default function Index() {
                     <Card author="Cristian Fonseca" title="Freemance - React"  description="A website that serves as a directory to store the profiles of freelancers registered in Slyk.io, allows you to register projects, courses, and skills" date="October 10, 2021" livecode="https://freemance.com"/>
                 </Section>
                 <Section title='Contact' id='contact'>
-                    <ContactForm/>
-                    <Contact/>
+                <div className='grid grid-cols-1 divide-mt-2 divide-y divide-secondary2'>
+                    <div><ContactForm/></div>
+                    <div><Contact/></div>
+                </div>
                 </Section>
             </main>
             <Footer>Developed with 💙 by Cristian Fonseca</Footer>

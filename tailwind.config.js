@@ -20,6 +20,7 @@ function withOpacity(variableName) {
         borderColor: theme => ({
           ...theme('colors'),
            DEFAULT: theme('colors.gray.300', 'currentColor'),
+           'secondary2': withOpacity('--color-secondary'),
           'primary': withOpacity('--border-color'),
           'secondary': '#ffed4a',
           'danger': '#e3342f',
@@ -38,6 +39,7 @@ function withOpacity(variableName) {
           primary: withOpacity('--color-primary'),
           secondary: withOpacity('--color-secondary')
         },
+        
         typography: (theme) => ({
           theme: {
             css: [

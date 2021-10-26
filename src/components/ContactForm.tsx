@@ -7,7 +7,7 @@ export const ContactForm = () => {
     const [isError, setIsError] = useState(false);
     return (
         <>
-        <div className="relative flex items-top justify-center mt-24 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div className="relative flex items-top justify-center mt-24 dark:bg-gray-900 sm:items-center sm:pt-0 mb-12">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div className="mt-1 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2">
@@ -30,7 +30,7 @@ export const ContactForm = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center mt-4 text-muted-hover text-gray-600 ">
+                        <div className="flex items-center mt-4 text-muted-hover  ">
                             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" className="w-8 h-8 text-muted-hover">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                             </svg>
