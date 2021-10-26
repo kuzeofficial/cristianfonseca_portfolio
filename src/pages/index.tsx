@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { Hero } from "../components/Hero";
 import Contact from "../components/Contact";
 import Card from "../components/Card";
+import { ContactForm } from '../components/ContactForm';
 export default function Index() {
     return (
         <Layout >
@@ -16,6 +17,7 @@ export default function Index() {
                     <Card author="Cristian Fonseca" title="Freemance - React"  description="A website that serves as a directory to store the profiles of freelancers registered in Slyk.io, allows you to register projects, courses, and skills" date="October 10, 2021" livecode="https://freemance.com"/>
                 </Section>
                 <Section title='Contact' id='contact'>
+                    <ContactForm/>
                     <Contact/>
                 </Section>
             </main>
