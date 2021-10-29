@@ -14,9 +14,9 @@ export default function Card({date,codelink,livecode,title,description,author}: 
                     <p className="text-sm font-semibold text-red-400">{date}</p>
                     <div>
                         { codelink &&
-                            <a className= "no-underline hover:underline text-sm sm:static font-semibold text-red-400 mr-2" target="_blank" href={codelink}>Code</a>
+                            <a className= "no-underline hover:underline text-sm sm:static font-semibold text-red-400 mr-2" target="_blank" href={codelink} rel="noreferrer">Code</a>
                         }
-                        <a className= "no-underline hover:underline text-sm sm:static font-semibold text-blue-400" target="_blank" href={livecode}>Live</a>
+                        <a className= "no-underline hover:underline text-sm sm:static font-semibold text-blue-400" target="_blank" href={livecode} rel="noreferrer">Live</a>
                     </div>
                 </div>
 
