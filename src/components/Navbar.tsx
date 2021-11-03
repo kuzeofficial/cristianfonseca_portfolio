@@ -10,7 +10,7 @@ export const Navbar = ({ pickerOpen, setPickerOpen } : NavbarProps) => {
         <nav className="p-10 text-muted lg:max-w-5xl md:mx-auto md:max-w-3xl">
             <div className="flex items-center justify-between">
                 <div className="space-x-6 md:space-x-14">
-                    <Link href='/'>
+                    <Link href='/' >
                         <a className="transition-colors hover:text-muted-hover">Home</a>
                     </Link>
                     <Link href='/blog'>
@@ -29,6 +29,8 @@ export const Navbar = ({ pickerOpen, setPickerOpen } : NavbarProps) => {
                         aria-label="Cristian Fonseca Github Profile"
                         href="https://github.com/kuzeofficial"
                         className="inline-block w-8 h-8 transition-colors hover:text-muted-hover"
+                        target="_blank"
+                        rel="noreferrer"
                     >
                         <GitHubLogo/>
                     </a>
@@ -36,6 +38,8 @@ export const Navbar = ({ pickerOpen, setPickerOpen } : NavbarProps) => {
                         aria-label="Cristian Fonseca Twitter Profile"
                         href="https://twitter.com/cristian_devk"
                         className="inline-block w-8 h-8 transition-colors hover:text-muted-hover"
+                        target="_blank"
+                        rel="noreferrer"
                     >
                         <TwitterLogo/>
                     </a>
