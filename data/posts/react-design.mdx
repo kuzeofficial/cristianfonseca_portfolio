@@ -1,6 +1,6 @@
 ---
 title: "Atomic Design with React and Typescript"
-date: "2021-10-10"
+date: "2021-12-10"
 author: "Cristian Fonseca"
 preview: "https://cristianfonseca.com/images/react-ts-atomic.jpg"
 site: "https://cristianfonseca.com/blog/primeros-pasos-con-webpack"
@@ -14,6 +14,7 @@ tags: ["Typescript💙", "React⚛"]
 I recently had the opportunity to work for the first time with atomic design, I had never worked with this type of organization on a project, and in this article I want to tell you about my experience in it.
 
 # What is Atomic Design?
+
 ![Atomic Design](/images/atomic-design/atomic-design.png)
 
 Popularly known in the design world, Atomic Design helps build consistent, robust and reusable design systems. Also, in the world of React, Vue, and frameworks that encourage componentization, Atomic Design is used unconsciously; but when used in the right way, it becomes a powerful ally for developers
@@ -21,6 +22,7 @@ Popularly known in the design world, Atomic Design helps build consistent, robus
 The name Atomic Design comes from the idea of ​​separating the components into atoms, molecules, organisms, templates, and pages, as in the image above. But what are the responsibilities of each separate party?
 
 # Atoms
+
 ![Atoms](/images/atomic-design/atoms.png)
 
 Atoms are the smallest possible components, such as buttons, titles, tickets or color palettes of events, animations, and fonts. They can be applied in any context, globally or within other components and templates, as well as having many states, like this button example: disabled, hover, different sizes, etc.
@@ -54,11 +56,12 @@ Pages are the navigate parts of the application and it’s where the components 
 When using React with Atomic Design it is necessary to define some rules of the development methodology, to ensure that the components are reused as much as possible, that they do not have states, no styles of positions and hardcoded margins to avoid UI errors in the other pages.
 
 The rules to follow are:
-+ 1-  The Atomic Design must have a **variable** file and must be imported for each component
-+ 2-  **Atoms** must be written without margins or positions
-+ 3-  Only **molecules** and **organisms** can establish the positions of the atoms, but these stacks cannot have any style of margins and positions.
-+ 4- **Templates** have only one function: to set the grid of pages but never positions of specific components.
-+ 5- **The pages** render the components with a defined template and this is where the **Atomic Design** will connect to the rest of the application.
+
+- 1- The Atomic Design must have a **variable** file and must be imported for each component
+- 2- **Atoms** must be written without margins or positions
+- 3- Only **molecules** and **organisms** can establish the positions of the atoms, but these stacks cannot have any style of margins and positions.
+- 4- **Templates** have only one function: to set the grid of pages but never positions of specific components.
+- 5- **The pages** render the components with a defined template and this is where the **Atomic Design** will connect to the rest of the application.
 
 # Composition
 

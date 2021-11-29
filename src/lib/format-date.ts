@@ -1,5 +1,8 @@
 import { format, parseISO } from "date-fns";
 
-
-export const formatDate = (date:any) =>
-  format(parseISO(date), "MMMM d, yyyy")
+type DateFormat =
+  | "yyyy-MM-dd"
+  | "yyyy-MM-dd HH:mm:ss"
+  | "yyyy-MM-dd HH:mm:ss.SSS";
+export const formatDate = (date: DateFormat) =>
+  format(parseISO(date), "MMMM d, yyyy");
