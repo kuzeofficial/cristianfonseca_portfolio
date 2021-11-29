@@ -15,7 +15,6 @@ export default function Blog({ posts }: BlogProps) {
   const { next, currentPage, currentData, maxPage } = usePagination(posts, 21);
   const [element, setElement]: any = useState(null);
   const observer = useRef<IntersectionObserver>();
-  console.log(observer);
   const prevY = useRef(0);
 
   const currentPosts = currentData();

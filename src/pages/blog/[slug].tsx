@@ -24,7 +24,6 @@ interface PostProps {
   frontmatter: FrontMatterProps;
 }
 export default function Post({ source, frontmatter }: PostProps) {
-  console.log(frontmatter.readingTime);
   return (
     <>
       <Head>
