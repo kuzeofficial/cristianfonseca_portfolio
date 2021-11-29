@@ -18,7 +18,7 @@ export const MDXComponents = {
   ),
   p: (props: Object) => (
     <p
-      className="font-light mt-5 text-md font-normal max-h-3xl  block overflow-ellipsis overflow-hidden break-words mb-2"
+      className="mt-5 text-md font-normal max-h-3xl  block overflow-ellipsis overflow-hidden break-words mb-2"
       {...props}
     />
   ),
